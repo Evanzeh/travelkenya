@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Safari Stays Travels</title>
+<style>
+body{margin:0;font-family:Arial;background:#f5f5f5}
+.top{background:#003580;color:white;padding:12px 14px}
+.top h2{margin:0;font-size:22px}
+.top p{margin:4px 0 0;font-size:13px;opacity:.9}
+.searchBox{background:white;margin:-10px 14px 12px;padding:12px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.searchBox input,.searchBox select{width:100%;padding:11px;margin:5px 0;border:1px solid #ccc;border-radius:6px;box-sizing:border-box}
+.searchBox button{width:100%;padding:13px;background:#0071c2;color:white;border:none;border-radius:6px;font-size:16px;font-weight:bold}
+.card{background:white;margin:10px 14px;border-radius:8px;overflow:hidden;display:flex;box-shadow:0 1px 4px rgba(0,0,0,.1)}
+.card img{width:110px;height:120px;object-fit:cover}
+.card-info{padding:8px 10px;flex:1}
+.card-info h3{margin:0;font-size:15px;color:#0071c2}
+.card-info p{margin:3px 0;font-size:13px;color:#333}
+.price{font-size:16px;font-weight:bold}
+.bookBtn{background:#0071c2;color:white;border:none;padding:9px 10px;border-radius:6px;width:100%;margin-top:6px;font-weight:bold}
+.viewBtn{background:white;color:#0071c2;border:1px solid #0071c2;padding:8px;border-radius:6px;width:100%;margin-top:4px}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <h2>Safari Stays Travels</h2>
+  <p>Find deals for any season • Hotels in Kenya</p>
+</div>
+
+<div class="searchBox">
+  <input id="search" placeholder="Where are you going? e.g Mombasa, Diani, Nairobi">
+  <input id="checkinTop" type="date">
+  <input id="checkoutTop" type="date">
+  <select id="guestsTop"><option value="2">2 adults • 1 room</option><option value="1">1 adult • 1 room</option><option value="4">4 adults • 2 rooms</option></select>
+  <button onclick="doSearch()">Search</button>
+</div>
+
+<p style="padding:0 14px;font-weight:bold">Browse properties in Kenya • 30 hotels</p>
+<div id="hotels"></div>
+
+<!-- DETAIL -->
+<div id="detail" style="display:none;background:#fff;position:fixed;top:0;left:0;right:0;bottom:0;overflow:auto;z-index:99;padding:12px">
+  <button onclick="document.getElementById('detail').style.display='none'">← Back to results</button>
+  <h2 id="detailName"></h2>
+  <p id="detailPrice"></p>
+  <div id="swipeBox" style="position:relative">
+    <img id="mainPhoto" src="" style="width:100%;border-radius:8px;height:280px;object-fit:cover">
+    <button onclick="prevPhoto()" style="position:absolute;left:8px;top:45%;font-size:28px;padding:4px 12px;border-radius:50%;border:none">‹</button>
+    <button onclick="nextPhoto()" style="position:absolute;right:8px;top:45%;font-size:28px;padding:4px 12px;border-radius:50%;border:none">›</button>
+  </div>
+  <p id="photoLabel" style="text-align:center;font-weight:bold"></p>
+  <p id="dots" style="text-align:center;font-size:20px"></p>
+  <div style="display:flex;gap:6px;justify-content:center">
+    <button onclick="goPhoto(0)">Main</button>
+    <button onclick="goPhoto(1)">Bedroom</button>
+    <button onclick="goPhoto(2)">Toilet</button>
+    <button onclick="goPhoto(3)">Pool</button>
+  </div>
+
+  <!-- BOOKING BY EMAIL -->
+  <div style="margin-top:18px;background:#f2f6fc;padding:14px;border-radius:10px;border:1px solid #0071c2">
+    <h3>Reserve - Pay 35% Later via Pesapal</h3>
+    <p style="font-size:13px">Fill form → We get booking email instantly → We send you Pesapal link to pay 35% deposit.</p>
+    <input id="guestName" placeholder="Your full name" style="width:100%;padding:10px;margin:5px 0">
+    <input id="guestEmail" placeholder="Your email" style="width:100%;padding:10px;margin:5px 0">
+    <input id="guestPhone" placeholder="Your phone e.g 0712345678" style="width:100%;padding:10px;margin:5px 0">
+    <input id="checkin" type="date" style="width:100%;padding:10px;margin:5px 0" onchange="calcDeposit()">
+    <input id="checkout" type="date" style="width:100%;padding:10px;margin:5px 0" onchange="calcDeposit()">
+    <input id="guests" type="number" value="2" style="width:100%;padding:10px;margin:5px 0">
+    <div style="background:white;padding:10px;border-radius:8px;margin:8px 0;text-align:center">
+      <p id="totalText">Select dates to see total</p>
+      <h3 id="depositText" style="color:#0071c2;margin:0">Deposit 35%: Ksh 0</h3>
+      <p style="font-size:12px;margin:4px 0">Balance at hotel: <span id="balanceText">Ksh 0</span></p>
+    </div>
+    <button onclick="sendBookingEmail()" style="width:100%;padding:14px;background:#0071c2;color:white;border:none;border-radius:8px;font-size:16px">SEND BOOKING EMAIL - Reserve Now</button>
+    <p id="bookMsg" style="text-align:center;color:green"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
