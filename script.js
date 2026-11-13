@@ -1,34 +1,34 @@
 const hotels = [
-  { name:"Voyager Beach Resort Mombasa", location:"Nyali, Mombasa", price:18000, rating:"4.5", main:"voyager-main.jpg", bedroom:"voyager-bedroom.jpg", toilet:"voyager-toilet.jpg", pool:"voyager-pool.jpg" },
-  { name:"Villa Rosa Kempinski Nairobi", location:"Westlands, Nairobi", price:25000, rating:"5.0", main:"kempinski-main.jpg", bedroom:"kempinski-bedroom.jpg", toilet:"kempinski-toilet.jpg", pool:"kempinski-pool.jpg" },
-  { name:"Sarova Stanley Nairobi", location:"CBD, Nairobi", price:15000, rating:"4.6", main:"stanley-main.jpg", bedroom:"stanley-bedroom.jpg", toilet:"stanley-toilet.jpg", pool:"stanley-pool.jpg" },
-  { name:"Sarova Whitesands Beach Resort", location:"Nyali, Mombasa", price:20000, rating:"4.7", main:"whitesands-main.jpg", bedroom:"whitesands-bedroom.jpg", toilet:"whitesands-toilet.jpg", pool:"whitesands-pool.jpg" },
-  { name:"Diani Reef Beach Resort", location:"Diani, Kwale", price:22000, rating:"4.6", main:"diani-reef-main.jpg", bedroom:"diani-reef-bedroom.jpg", toilet:"diani-reef-toilet.jpg", pool:"diani-reef-pool.jpg" },
-  { name:"Baobab Beach Resort", location:"Diani, Kwale", price:17000, rating:"4.5", main:"baobab-main.jpg", bedroom:"baobab-bedroom.jpg", toilet:"baobab-toilet.jpg", pool:"baobab-pool.jpg" },
-  { name:"Serena Beach Resort & Spa", location:"Shanzu, Mombasa", price:21000, rating:"4.6", main:"serena-beach-main.jpg", bedroom:"serena-beach-bedroom.jpg", toilet:"serena-beach-toilet.jpg", pool:"serena-beach-pool.jpg" },
-  { name:"PrideInn Paradise Beach Resort", location:"Shanzu, Mombasa", price:16000, rating:"4.4", main:"prideinn-main.jpg", bedroom:"prideinn-bedroom.jpg", toilet:"prideinn-toilet.jpg", pool:"prideinn-pool.jpg" },
-  { name:"Hemingways Watamu", location:"Watamu, Kilifi", price:32000, rating:"4.8", main:"hemingways-main.jpg", bedroom:"hemingways-bedroom.jpg", toilet:"hemingways-toilet.jpg", pool:"hemingways-pool.jpg" },
-  { name:"Leopard Beach Resort", location:"Diani, Kwale", price:23000, rating:"4.7", main:"leopard-main.jpg", bedroom:"leopard-bedroom.jpg", toilet:"leopard-toilet.jpg", pool:"leopard-pool.jpg" },
-  { name:"The Sands at Nomad Diani", location:"Diani, Kwale", price:26000, rating:"4.7", main:"nomad-main.jpg", bedroom:"nomad-bedroom.jpg", toilet:"nomad-toilet.jpg", pool:"nomad-pool.jpg" },
-  { name:"Swahili Beach Resort", location:"Diani, Kwale", price:24000, rating:"4.6", main:"swahili-main.jpg", bedroom:"swahili-bedroom.jpg", toilet:"swahili-toilet.jpg", pool:"swahili-pool.jpg" },
-  { name:"Neptune Beach Resort", location:"Bamburi, Mombasa", price:15000, rating:"4.3", main:"neptune-main.jpg", bedroom:"neptune-bedroom.jpg", toilet:"neptune-toilet.jpg", pool:"neptune-pool.jpg" },
-  { name:"Bamburi Beach Hotel", location:"Bamburi, Mombasa", price:13000, rating:"4.2", main:"bamburi-main.jpg", bedroom:"bamburi-bedroom.jpg", toilet:"bamburi-toilet.jpg", pool:"bamburi-pool.jpg" },
-  { name:"Travellers Beach Hotel", location:"Nyali, Mombasa", price:14000, rating:"4.3", main:"travellers-main.jpg", bedroom:"travellers-bedroom.jpg", toilet:"travellers-toilet.jpg", pool:"travellers-pool.jpg" },
-  { name:"Reef Hotel Mombasa", location:"Nyali, Mombasa", price:12000, rating:"4.1", main:"reef-hotel-main.jpg", bedroom:"reef-hotel-bedroom.jpg", toilet:"reef-hotel-toilet.jpg", pool:"reef-hotel-pool.jpg" },
-  { name:"English Point Marina", location:"Nyali, Mombasa", price:19000, rating:"4.5", main:"english-point-main.jpg", bedroom:"english-point-bedroom.jpg", toilet:"english-point-toilet.jpg", pool:"english-point-pool.jpg" },
-  { name:"Tamarind Tree Hotel Nairobi", location:"Karen, Nairobi", price:17000, rating:"4.5", main:"tamarind-main.jpg", bedroom:"tamarind-bedroom.jpg", toilet:"tamarind-toilet.jpg", pool:"tamarind-pool.jpg" },
-  { name:"Tribe Hotel Nairobi", location:"Gigiri, Nairobi", price:21000, rating:"4.7", main:"tribe-main.jpg", bedroom:"tribe-bedroom.jpg", toilet:"tribe-toilet.jpg", pool:"tribe-pool.jpg" },
-  { name:"Fairmont The Norfolk", location:"CBD, Nairobi", price:19000, rating:"4.6", main:"norfolk-main.jpg", bedroom:"norfolk-bedroom.jpg", toilet:"norfolk-toilet.jpg", pool:"norfolk-pool.jpg" },
-  { name:"Nairobi Serena Hotel", location:"Upper Hill, Nairobi", price:20000, rating:"4.7", main:"serena-nairobi-main.jpg", bedroom:"serena-nairobi-bedroom.jpg", toilet:"serena-nairobi-toilet.jpg", pool:"serena-nairobi-pool.jpg" },
-  { name:"Radisson Blu Nairobi Upper Hill", location:"Upper Hill, Nairobi", price:18000, rating:"4.5", main:"radisson-main.jpg", bedroom:"radisson-bedroom.jpg", toilet:"radisson-toilet.jpg", pool:"radisson-pool.jpg" },
-  { name:"Four Points by Sheraton Airport", location:"JKIA, Nairobi", price:14000, rating:"4.4", main:"four-points-main.jpg", bedroom:"four-points-bedroom.jpg", toilet:"four-points-toilet.jpg", pool:"four-points-pool.jpg" },
-  { name:"Eka Hotel Nairobi", location:"Mombasa Road, Nairobi", price:13000, rating:"4.4", main:"eka-main.jpg", bedroom:"eka-bedroom.jpg", toilet:"eka-toilet.jpg", pool:"eka-pool.jpg" },
-  { name:"Azure Hotel Nairobi", location:"Westlands, Nairobi", price:16000, rating:"4.5", main:"azure-main.jpg", bedroom:"azure-bedroom.jpg", toilet:"azure-toilet.jpg", pool:"azure-pool.jpg" },
-  { name:"Trademark Hotel Village Market", location:"Gigiri, Nairobi", price:15000, rating:"4.4", main:"trademark-main.jpg", bedroom:"trademark-bedroom.jpg", toilet:"trademark-toilet.jpg", pool:"trademark-pool.jpg" },
-  { name:"Enashipai Resort & Spa", location:"Naivasha", price:19000, rating:"4.6", main:"enashipai-main.jpg", bedroom:"enashipai-bedroom.jpg", toilet:"enashipai-toilet.jpg", pool:"enashipai-pool.jpg" },
-  { name:"Lake Naivasha Sopa Resort", location:"Naivasha", price:16000, rating:"4.3", main:"naivasha-sopa-main.jpg", bedroom:"naivasha-sopa-bedroom.jpg", toilet:"naivasha-sopa-toilet.jpg", pool:"naivasha-sopa-pool.jpg" },
-  { name:"Sarova Mara Game Camp", location:"Masai Mara", price:28000, rating:"4.7", main:"mara-camp-main.jpg", bedroom:"mara-camp-bedroom.jpg", toilet:"mara-camp-toilet.jpg", pool:"mara-camp-pool.jpg" },
-  { name:"Mara Serena Safari Lodge", location:"Masai Mara", price:30000, rating:"4.8", main:"mara-serena-main.jpg", bedroom:"mara-serena-bedroom.jpg", toilet:"mara-serena-toilet.jpg", pool:"mara-serena-pool.jpg" }
+  { name:"Voyager Beach Resort Mombasa", location:"Nyali, Mombasa", price:138, rating:"4.5", main:"voyager-main.jpg", bedroom:"voyager-bedroom.jpg", toilet:"voyager-toilet.jpg", pool:"voyager-pool.jpg" },
+  { name:"Villa Rosa Kempinski Nairobi", location:"Westlands, Nairobi", price:192, rating:"5.0", main:"kempinski-main.jpg", bedroom:"kempinski-bedroom.jpg", toilet:"kempinski-toilet.jpg", pool:"kempinski-pool.jpg" },
+  { name:"Sarova Stanley Nairobi", location:"CBD, Nairobi", price:115, rating:"4.6", main:"stanley-main.jpg", bedroom:"stanley-bedroom.jpg", toilet:"stanley-toilet.jpg", pool:"stanley-pool.jpg" },
+  { name:"Sarova Whitesands Beach Resort", location:"Nyali, Mombasa", price:154, rating:"4.7", main:"whitesands-main.jpg", bedroom:"whitesands-bedroom.jpg", toilet:"whitesands-toilet.jpg", pool:"whitesands-pool.jpg" },
+  { name:"Diani Reef Beach Resort", location:"Diani, Kwale", price:169, rating:"4.6", main:"diani-reef-main.jpg", bedroom:"diani-reef-bedroom.jpg", toilet:"diani-reef-toilet.jpg", pool:"diani-reef-pool.jpg" },
+  { name:"Baobab Beach Resort", location:"Diani, Kwale", price:131, rating:"4.5", main:"baobab-main.jpg", bedroom:"baobab-bedroom.jpg", toilet:"baobab-toilet.jpg", pool:"baobab-pool.jpg" },
+  { name:"Serena Beach Resort & Spa", location:"Shanzu, Mombasa", price:162, rating:"4.6", main:"serena-beach-main.jpg", bedroom:"serena-beach-bedroom.jpg", toilet:"serena-beach-toilet.jpg", pool:"serena-beach-pool.jpg" },
+  { name:"PrideInn Paradise Beach Resort", location:"Shanzu, Mombasa", price:123, rating:"4.4", main:"prideinn-main.jpg", bedroom:"prideinn-bedroom.jpg", toilet:"prideinn-toilet.jpg", pool:"prideinn-pool.jpg" },
+  { name:"Hemingways Watamu", location:"Watamu, Kilifi", price:246, rating:"4.8", main:"hemingways-main.jpg", bedroom:"hemingways-bedroom.jpg", toilet:"hemingways-toilet.jpg", pool:"hemingways-pool.jpg" },
+  { name:"Leopard Beach Resort", location:"Diani, Kwale", price:177, rating:"4.7", main:"leopard-main.jpg", bedroom:"leopard-bedroom.jpg", toilet:"leopard-toilet.jpg", pool:"leopard-pool.jpg" },
+  { name:"The Sands at Nomad Diani", location:"Diani, Kwale", price:200, rating:"4.7", main:"nomad-main.jpg", bedroom:"nomad-bedroom.jpg", toilet:"nomad-toilet.jpg", pool:"nomad-pool.jpg" },
+  { name:"Swahili Beach Resort", location:"Diani, Kwale", price:185, rating:"4.6", main:"swahili-main.jpg", bedroom:"swahili-bedroom.jpg", toilet:"swahili-toilet.jpg", pool:"swahili-pool.jpg" },
+  { name:"Neptune Beach Resort", location:"Bamburi, Mombasa", price:115, rating:"4.3", main:"neptune-main.jpg", bedroom:"neptune-bedroom.jpg", toilet:"neptune-toilet.jpg", pool:"neptune-pool.jpg" },
+  { name:"Bamburi Beach Hotel", location:"Bamburi, Mombasa", price:100, rating:"4.2", main:"bamburi-main.jpg", bedroom:"bamburi-bedroom.jpg", toilet:"bamburi-toilet.jpg", pool:"bamburi-pool.jpg" },
+  { name:"Travellers Beach Hotel", location:"Nyali, Mombasa", price:108, rating:"4.3", main:"travellers-main.jpg", bedroom:"travellers-bedroom.jpg", toilet:"travellers-toilet.jpg", pool:"travellers-pool.jpg" },
+  { name:"Reef Hotel Mombasa", location:"Nyali, Mombasa", price:92, rating:"4.1", main:"reef-hotel-main.jpg", bedroom:"reef-hotel-bedroom.jpg", toilet:"reef-hotel-toilet.jpg", pool:"reef-hotel-pool.jpg" },
+  { name:"English Point Marina", location:"Nyali, Mombasa", price:146, rating:"4.5", main:"english-point-main.jpg", bedroom:"english-point-bedroom.jpg", toilet:"english-point-toilet.jpg", pool:"english-point-pool.jpg" },
+  { name:"Tamarind Tree Hotel Nairobi", location:"Karen, Nairobi", price:131, rating:"4.5", main:"tamarind-main.jpg", bedroom:"tamarind-bedroom.jpg", toilet:"tamarind-toilet.jpg", pool:"tamarind-pool.jpg" },
+  { name:"Tribe Hotel Nairobi", location:"Gigiri, Nairobi", price:162, rating:"4.7", main:"tribe-main.jpg", bedroom:"tribe-bedroom.jpg", toilet:"tribe-toilet.jpg", pool:"tribe-pool.jpg" },
+  { name:"Fairmont The Norfolk", location:"CBD, Nairobi", price:146, rating:"4.6", main:"norfolk-main.jpg", bedroom:"norfolk-bedroom.jpg", toilet:"norfolk-toilet.jpg", pool:"norfolk-pool.jpg" },
+  { name:"Nairobi Serena Hotel", location:"Upper Hill, Nairobi", price:154, rating:"4.7", main:"serena-nairobi-main.jpg", bedroom:"serena-nairobi-bedroom.jpg", toilet:"serena-nairobi-toilet.jpg", pool:"serena-nairobi-pool.jpg" },
+  { name:"Radisson Blu Nairobi Upper Hill", location:"Upper Hill, Nairobi", price:138, rating:"4.5", main:"radisson-main.jpg", bedroom:"radisson-bedroom.jpg", toilet:"radisson-toilet.jpg", pool:"radisson-pool.jpg" },
+  { name:"Four Points by Sheraton Airport", location:"JKIA, Nairobi", price:108, rating:"4.4", main:"four-points-main.jpg", bedroom:"four-points-bedroom.jpg", toilet:"four-points-toilet.jpg", pool:"four-points-pool.jpg" },
+  { name:"Eka Hotel Nairobi", location:"Mombasa Road, Nairobi", price:100, rating:"4.4", main:"eka-main.jpg", bedroom:"eka-bedroom.jpg", toilet:"eka-toilet.jpg", pool:"eka-pool.jpg" },
+  { name:"Azure Hotel Nairobi", location:"Westlands, Nairobi", price:123, rating:"4.5", main:"azure-main.jpg", bedroom:"azure-bedroom.jpg", toilet:"azure-toilet.jpg", pool:"azure-pool.jpg" },
+  { name:"Trademark Hotel Village Market", location:"Gigiri, Nairobi", price:115, rating:"4.4", main:"trademark-main.jpg", bedroom:"trademark-bedroom.jpg", toilet:"trademark-toilet.jpg", pool:"trademark-pool.jpg" },
+  { name:"Enashipai Resort & Spa", location:"Naivasha", price:146, rating:"4.6", main:"enashipai-main.jpg", bedroom:"enashipai-bedroom.jpg", toilet:"enashipai-toilet.jpg", pool:"enashipai-pool.jpg" },
+  { name:"Lake Naivasha Sopa Resort", location:"Naivasha", price:123, rating:"4.3", main:"naivasha-sopa-main.jpg", bedroom:"naivasha-sopa-bedroom.jpg", toilet:"naivasha-sopa-toilet.jpg", pool:"naivasha-sopa-pool.jpg" },
+  { name:"Sarova Mara Game Camp", location:"Masai Mara", price:215, rating:"4.7", main:"mara-camp-main.jpg", bedroom:"mara-camp-bedroom.jpg", toilet:"mara-camp-toilet.jpg", pool:"mara-camp-pool.jpg" },
+  { name:"Mara Serena Safari Lodge", location:"Masai Mara", price:231, rating:"4.8", main:"mara-serena-main.jpg", bedroom:"mara-serena-bedroom.jpg", toilet:"mara-serena-toilet.jpg", pool:"mara-serena-pool.jpg" }
 ];
 // --- BOOKING.COM CARDS ---
 function showHotels(list) {
@@ -44,7 +44,7 @@ function showHotels(list) {
           <h3 onclick="openHotel(${idx})">${h.name}</h3>
           <p>${h.location} • ⭐ ${h.rating} Excellent</p>
           <p>Free cancellation • Breakfast included</p>
-          <p class="price">Ksh ${h.price} <span style="font-weight:normal;font-size:12px">/ night</span></p>
+          <p class="price">$ ${h.price} <span style="font-weight:normal;font-size:12px">/ night</span></p>
           <button class="viewBtn" onclick="openHotel(${idx})">See availability - Swipe Photos</button>
           <button class="bookBtn" onclick="openHotel(${idx})">Book This Hotel</button>
         </div>
@@ -71,7 +71,7 @@ function openHotel(idx) {
   currentPhotos = [currentHotel.main, currentHotel.bedroom, currentHotel.toilet, currentHotel.pool];
   currentIndex = 0;
   document.getElementById("detailName").innerText = currentHotel.name + " - " + currentHotel.location;
-  document.getElementById("detailPrice").innerText = "Ksh " + currentHotel.price + " / night • ⭐ " + currentHotel.rating;
+  document.getElementById("detailPrice").innerText = "$ " + currentHotel.price + " / night • ⭐ " + currentHotel.rating;
   document.getElementById("detail").style.display = "block";
   showPhoto();
   calcDeposit();
@@ -112,9 +112,9 @@ function calcDeposit() {
   const total = currentHotel.price * nights;
   const deposit = Math.round(total * 0.35);
   const balance = total - deposit;
-  document.getElementById("totalText").innerText = `Total for ${nights} night(s): Ksh ${total} - ${currentHotel.name}`;
-  document.getElementById("depositText").innerText = `Deposit 35% to Pay: Ksh ${deposit}`;
-  document.getElementById("balanceText").innerText = `Ksh ${balance}`;
+  document.getElementById("totalText").innerText = `Total for ${nights} night(s): $ ${total} - ${currentHotel.name}`;
+  document.getElementById("depositText").innerText = `Deposit 35% to Pay: $ ${deposit}`;
+  document.getElementById("balanceText").innerText = `$ ${balance}`;
   return { nights, total, deposit, balance };
 }
 
@@ -140,7 +140,7 @@ async function sendBookingEmail() {
       headers: { "Content-Type": "application/json", "Accept": "application/json" },
       body: JSON.stringify({
         access_key: "4109200f-bc76-44f8-abdf-d4a62aa92ad5",
-        subject: `New Booking ${ref} - ${currentHotel.name} - Deposit Ksh ${calc.deposit}`,
+        subject: `New Booking ${ref} - ${currentHotel.name} - Deposit $ ${calc.deposit}`,
         from_name: "Safari Stays Travels Website",
         to: "Travelsafaribooking@gmail.com",
         reply_to: email,
@@ -153,20 +153,20 @@ async function sendBookingEmail() {
         Check_out: checkout,
         Guests: guests,
         Nights: calc.nights,
-        Total: "Ksh " + calc.total,
-        Deposit_35_Percent: "Ksh " + calc.deposit,
-        Balance: "Ksh " + calc.balance,
+        Total: "$ " + calc.total,
+        Deposit_35_Percent: "$ " + calc.deposit,
+        Balance: "$ " + calc.balance,
         Payment_Method: "Pesapal - PENDING"
       })
     });
     const data = await res.json();
     if (data.success) {
-      document.getElementById("bookMsg").innerHTML = `✅ Booking Sent! Ref: <b>${ref}</b><br>We have received it at Travelsafaribooking@gmail.com<br>Deposit to pay via Pesapal: <b>Ksh ${calc.deposit}</b><br>We will send Pesapal link to ${email}.`;
+      document.getElementById("bookMsg").innerHTML = `✅ Booking Sent! Ref: <b>${ref}</b><br>We have received it at Travelsafaribooking@gmail.com<br>Deposit to pay via Pesapal: <b>$ ${calc.deposit}</b><br>We will send Pesapal link to ${email}.`;
     } else {
       throw new Error(data.message);
     }
   } catch(e) {
-    document.getElementById("bookMsg").innerHTML = `Booking saved Ref: <b>${ref}</b><br>Auto-send failed: ${e.message}<br>Copy and send to Travelsafaribooking@gmail.com:<br>Hotel ${currentHotel.name}, ${checkin} to ${checkout}, ${calc.nights} nights, Total Ksh ${calc.total}, Deposit Ksh ${calc.deposit}, Name ${name}, Email ${email}, Phone ${phone}`;
+    document.getElementById("bookMsg").innerHTML = `Booking saved Ref: <b>${ref}</b><br>Auto-send failed: ${e.message}<br>Copy and send to Travelsafaribooking@gmail.com:<br>Hotel ${currentHotel.name}, ${checkin} to ${checkout}, ${calc.nights} nights, Total $ ${calc.total}, Deposit $ ${calc.deposit}, Name ${name}, Email ${email}, Phone ${phone}`;
   }
 }
 // FIX PAST DATES - runs immediately, no waiting for DOMContentLoaded
@@ -206,12 +206,10 @@ async function sendBookingEmail() {
   }
   function blockPast(){
     const today=todayStr();
-    // Find EVERY date input on the page, no matter its id
     document.querySelectorAll('input[type="date"]').forEach(inp=>{
       inp.min=today;
       inp.setAttribute("min",today);
     });
-    // Also find ANY input with check in its id/name
     document.querySelectorAll('input[id*="check"], input[id*="Check"], input[name*="check"]').forEach(inp=>{
       inp.min=today;
       inp.setAttribute("min",today);
@@ -221,5 +219,5 @@ async function sendBookingEmail() {
     });
   }
   blockPast();
-  setInterval(blockPast, 1000); // keep re-applying when detail modal opens
+  setInterval(blockPast, 1000);
 })();
