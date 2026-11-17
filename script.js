@@ -1,7 +1,6 @@
 const hotels = [
   { name:"Voyager Beach Resort Mombasa", location:"Nyali, Mombasa", price:138, rating:"4.5", main:"voyager-main.jpg", bedroom:"voyager-bedroom.jpg", toilet:"voyager-toilet.jpg", pool:"voyager-pool.jpg" },
   { name:"Villa Rosa Kempinski Nairobi", location:"Westlands, Nairobi", price:192, rating:"5.0", main:"kempinski-main.jpg", bedroom:"kempinski-bedroom.jpg", toilet:"kempinski-toilet.jpg", pool:"kempinski-pool.jpg" },
-  { name:"Sarova Stanley Nairobi", location:"CBD, Nairobi", price:115, rating:"4.6", main:"stanley-main1.jpg", bedroom:"stanley-bedroom.jpg", toilet:"stanley-toilet.jpg", pool:"stanley-pool.jpg" },
   { name:"Sarova Whitesands Beach Resort", location:"Nyali, Mombasa", price:154, rating:"4.7", main:"whitesands-main.jpg", bedroom:"whitesands-bedroom.jpg", toilet:"whitesands-toilet.jpg", pool:"whitesands-pool.jpg" },
   { name:"Diani Reef Beach Resort", location:"Diani, Kwale", price:169, rating:"4.6", main:"diani-reef-main.jpg", bedroom:"diani-reef-bedroom.jpg", toilet:"diani-reef-toilet.jpg", pool:"diani-reef-pool.jpg" },
   { name:"Baobab Beach Resort", location:"Diani, Kwale", price:131, rating:"4.5", main:"baobab-main.jpg", bedroom:"baobab-bedroom.jpg", toilet:"baobab-toilet.jpg", pool:"baobab-pool.jpg" },
